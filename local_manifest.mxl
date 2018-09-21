@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="clean"
+           fetch="https://github.com/CleanAosp-O/"
+           revision="omni"/>
+
+  <remote  name="bb"
+           fetch="https://bitbucket.org" />
+
+  <remote  name="gb"
+           fetch="https://github.com/" />
+
+  <!-- Device -->
+  <project path="device/moto/shamu" name="device_shamu" remote="clean" />
+
+  <!-- Hardware -->
+  <project path="hardware/qcom/msm8x84" name="platform_hardware_qcom_msm8x84" remote="clean" />
+  <project path="hardware/ril" name="platform_hardware_ril" remote="clean" />
+
+  <!-- Kernel -->
+  <project path="kernel/moto/shamu" name="kernel_moto_shamu" remote="clean" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="joryb/arm-eabi-7.x" clone-depth="1" remote="bb" revision="master"/>
+
+  <!-- System -->
+  <project path="system/nfc" name="android_platform_system_nfc" remote="clean" />
+
+  <!-- Vendor -->
+  <project path="vendor/moto" name="proprietary_vendor_motorola" remote="clean" />
+
+</manifest>
